@@ -1,6 +1,8 @@
 from django.db import models
 
 
+
+
 # Create your models here.
 class WebsiteCommon(models.Model):
     brand = models.CharField(max_length=255)
@@ -8,7 +10,7 @@ class WebsiteCommon(models.Model):
     subscribe_text = models.CharField(max_length=255)
 
     def __str__(self):
-        return "{}".format(self.brand)
+        return "{}".format(self.brand)          
 
 
 class HeaderSection(models.Model):
